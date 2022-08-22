@@ -1,6 +1,7 @@
 import { useParams, Outlet, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getMovieById } from '../services/api';
+import MovieCard from 'components/MovieCard/MovieCard';
 
 const DetailedMoviePage = () => {
     const { id } = useParams();
@@ -21,9 +22,7 @@ const DetailedMoviePage = () => {
     } , [id]);
     return (
         <div>
-            <h1>{movie.title}</h1>
-            <img scr={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="card"/>
-            <p>{movie.overview}</p>
+            {movie && <MovieCard movie={movie} />}
             <Outlet />
         </div>
     );

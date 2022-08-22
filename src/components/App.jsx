@@ -2,7 +2,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import HomePage from "../pages/HomePage/HomePage";
 import MoviesPage from "../pages/MoviesPage/MoviesPage";
 import SharedLayout from "./SharedLayout/SharedLayout";
-import DetailedMoviePage from "../pages/DetailedMoviePage";
+import DetailedMoviePage from "../pages/MovieDetails";
 
 export const App = () => {
   return (
