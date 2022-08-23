@@ -20,14 +20,12 @@ const MovieReview = () => {
         fetchData(id);
     }, [id]);
 
-    console.log(reviews);
-
     return (
         <div>
             {reviews.length !== 0 ? (
         <ReviewPart reviews={reviews} />
       ) : (
-        <p>We do not have reviews for this movie</p>
+        <p>No reviews</p>
       )}
         </div>
     )

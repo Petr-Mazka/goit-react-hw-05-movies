@@ -24,6 +24,6 @@ export async function getMoviesReviews(id) {
 }
 
 export async function getMoviesQuery(query) {
-    const { data } = await axios.get(`/3/search/movie?api_key=${API_KEY}&query=${query}&include_adult=true`);
+    const { data } = await axios.get(`/3/search/movie?api_key=${API_KEY}&query=${query}&include_adult=false`);
     return { data };
 }

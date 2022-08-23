@@ -8,25 +8,39 @@ export const SearchForm = styled.form`
 `;
 
 export const Input = styled.input`
-    width: 200px;
+    width: 300px;
+    height: 42px;
     padding: 5px 10px;
-    border: 1px solid #ccc;
+    border: 2px solid #094067;
+    font-size: 1.2rem;
+    color: #094067;
     border-radius: 4px;
     outline: none;
+    box-sizing: border-box;
     margin-right: 10px;
+
+    &:focus {
+        border: 3px solid #0485e9;
+        color: #0485e9;
+    }
 `;
 
 export const Button = styled.button`
     width: 70px;
-    height: 27px;
-    border: 1px solid #ccc;
+    height: 42px;
+    border: 2px solid #094067;
+    background-color: #90b4ce;
+    color: #094067;
     border-radius: 4px;
+    font-size: 17px;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
 
     &:hover {
         cursor: pointer;
-        border: 1px solid #000;
+        border: 3px solid #0485e9;
+        color: #0485e9;
     }
 `;

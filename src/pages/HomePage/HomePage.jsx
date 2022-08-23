@@ -1,12 +1,13 @@
 import React from "react";
 import TrendingList from "components/TrendingList";
+import { HomeContainer, TrendingTitle } from "./HomePage.styled";
 
 const HomePage = () => {
     return (
-        <div>
-            <h1>Trending today</h1>
+        <HomeContainer>
+            <TrendingTitle>Trending today</TrendingTitle>
             <TrendingList />
-        </div>
+        </HomeContainer>
     );
 }
 

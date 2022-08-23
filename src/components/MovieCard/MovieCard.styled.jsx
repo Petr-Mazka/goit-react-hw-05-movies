@@ -4,6 +4,7 @@ export const MovieCardContainer = styled.div`
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    margin-top: 20px;
 `;
 
 export const MovieCardImage = styled.img`
