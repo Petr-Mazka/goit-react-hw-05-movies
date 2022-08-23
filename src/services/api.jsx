@@ -12,3 +12,18 @@ export async function getMovieById(id) {
     const { data } = await axios.get(`/3/movie/${id}?api_key=${API_KEY}`);
     return { data };
 }
+
+export async function getMoviesCast(id) {
+    const { data } = await axios.get(`/3/movie/${id}/credits?api_key=${API_KEY}`);
+    return { data };
+}
+
+export async function getMoviesReviews(id) {
+    const { data } = await axios.get(`/3/movie/${id}/reviews?api_key=${API_KEY}`);
+    return { data };
+}
+
+export async function getMoviesQuery(query) {
+    const { data } = await axios.get(`/3/search/movie?api_key=${API_KEY}&query=${query}&include_adult=true`);
+    return { data };
+}

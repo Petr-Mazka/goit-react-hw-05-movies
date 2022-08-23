@@ -1,4 +1,4 @@
-import { useParams, Outlet, useLocation } from 'react-router-dom';
+import { useParams, Outlet, useLocation, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getMovieById } from '../services/api';
 import MovieCard from 'components/MovieCard/MovieCard';
@@ -23,6 +23,8 @@ const DetailedMoviePage = () => {
     return (
         <div>
             {movie && <MovieCard movie={movie} />}
+            <Link to={`/movies/${id}/cast`}>Cast</Link>
+            <Link to={`/movies/${id}/reviews`}>Reviews</Link>
             <Outlet />
         </div>
     );
