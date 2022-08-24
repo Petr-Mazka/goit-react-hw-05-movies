@@ -12,7 +12,7 @@ const DetailedMoviePage = () => {
     const goBack = location.state?.from ?? '/';
     
     useEffect(() => {
-        const fetchData = async () => {
+        const fetchData = async (id) => {
             try {
                 const { data } = await getMovieById(id);
                 setMovie(data);
