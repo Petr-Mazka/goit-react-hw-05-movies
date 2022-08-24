@@ -22,7 +22,7 @@ const MovieCast = () => {
 
     return (
         <div>
-            {casts.length !== 0 ? <CastPart casts={casts} /> : <p>No found</p>}
+            {casts.length !== 0 ? <CastPart casts={casts} /> : <p>Loading...</p>}
         </div>
     )
 }

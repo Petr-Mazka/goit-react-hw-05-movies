@@ -25,7 +25,7 @@ const MovieReview = () => {
             {reviews.length !== 0 ? (
         <ReviewPart reviews={reviews} />
       ) : (
-        <p>No reviews</p>
+        <p>Loading...</p>
       )}
         </div>
     )
